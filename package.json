@@ -1,7 +1,7 @@
 {
-  "name": "vanilla",
+  "name": "nibo.sh",
+  "private": true,
   "version": "1.0.0",
-  "description": "JavaScript example starter project",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
@@ -13,6 +13,5 @@
   },
   "resolutions": {
     "@babel/preset-env": "7.13.8"
-  },
-  "keywords": ["javascript", "starter"]
+  }
 }
