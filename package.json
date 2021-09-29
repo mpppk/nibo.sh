@@ -1,5 +1,5 @@
 {
-  "name": "nibo.sh",
+  "name": "nibosh",
   "private": true,
   "version": "1.0.0",
   "main": "index.html",
@@ -7,11 +7,15 @@
     "start": "parcel index.html --open",
     "build": "parcel build index.html"
   },
-  "dependencies": { "parcel-bundler": "^1.6.1" },
+  "dependencies": {
+    "parcel-bundler": "^1.6.1"
+  },
   "devDependencies": {
     "@babel/core": "7.2.0"
   },
   "resolutions": {
     "@babel/preset-env": "7.13.8"
-  }
+  },
+  "keywords": [],
+  "description": ""
 }
