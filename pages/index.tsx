@@ -1,16 +1,15 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import { useEffect } from 'react'
-import styles from '../styles/Home.module.css'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
+import { useEffect } from "react";
+import styles from "../styles/Home.module.css";
 import Link from "next/link";
 
 const Home: NextPage = () => {
   useEffect(() => {
-    console.log(location)
-  }, [])
+    console.log(location);
+  }, []);
 
-  
   return (
     <div className={styles.container}>
       <Head>
@@ -20,26 +19,24 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          nibo.sh/
-        </h1>
+        <h1 className={styles.title}>nibo.sh/</h1>
 
         <div className={styles.grid}>
           <a
-              href="https://scrapbox.io/niboshi/niboshi"
-              target="_blank"
-              rel="noreferrer"
-              className={styles.card}
+            href="https://scrapbox.io/niboshi/niboshi"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.card}
           >
             <h2>Profile</h2>
             <p>/niboshi on Scrapbox</p>
           </a>
 
           <a
-              href="https://twitter.com/mpppk"
-              target="_blank"
-              rel="noreferrer"
-              className={styles.card}
+            href="https://twitter.com/mpppk"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.card}
           >
             <h2>Twitter</h2>
             <p>@mpppk</p>
@@ -55,16 +52,16 @@ const Home: NextPage = () => {
             <p>@mpppk</p>
           </a>
 
-            <Link href={'/pay'}>
-              <a className={styles.card}>
-                <h2>Pay</h2>
+          <Link href={"/pay"}>
+            <a className={styles.card}>
+              <h2>Pay</h2>
               <p>Kyash, PayPay</p>
-              </a>
-            </Link>
+            </a>
+          </Link>
         </div>
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

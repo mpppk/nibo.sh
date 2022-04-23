@@ -1,5 +1,5 @@
 const Pay = () => {
-    return (
+  return (
     <div>
       <h1>Pay</h1>
     </div>
