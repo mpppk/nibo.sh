@@ -25,19 +25,31 @@ const Home: NextPage = () => {
         </h1>
 
         <div className={styles.grid}>
-          <a href="https://scrapbox.io/niboshi/niboshi" target="_blank" className={styles.card}>
+          <a
+              href="https://scrapbox.io/niboshi/niboshi"
+              target="_blank"
+              rel="noreferrer"
+              className={styles.card}
+          >
             <h2>Profile</h2>
             <p>/niboshi on Scrapbox</p>
           </a>
 
-          <a href="https://twitter.com/mpppk" target="_blank" className={styles.card}>
+          <a
+              href="https://twitter.com/mpppk"
+              target="_blank"
+              rel="noreferrer"
+              className={styles.card}
+          >
             <h2>Twitter</h2>
             <p>@mpppk</p>
           </a>
 
           <a
             href="https://github.com/mpppk"
-            className={styles.card} target="_blank"
+            className={styles.card}
+            target="_blank"
+            rel="noreferrer"
           >
             <h2>GitHub</h2>
             <p>@mpppk</p>
