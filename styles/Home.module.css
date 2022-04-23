@@ -43,6 +43,12 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.title span {
+  margin-left: 1rem;
 }
 
 .title,

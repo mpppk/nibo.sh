@@ -19,7 +19,16 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>nibo.sh/</h1>
+        <h1 className={styles.title}>
+          <Image
+            className={"niboshi-logo"}
+            src="https://i.gyazo.com/eafa8efaaad66776e010ec9123d28f9e.png"
+            alt={"niboshi profile icon"}
+            width={64}
+            height={64}
+          />
+          <span>nibo.sh/</span>
+        </h1>
 
         <div className={styles.grid}>
           <a
