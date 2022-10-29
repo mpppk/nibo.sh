@@ -1,3 +1,5 @@
+import { urls } from "../../src/const";
+
 describe("nibo.sh page", () => {
   beforeEach(() => {
     cy.visit("http://localhost:3000");
@@ -7,7 +9,7 @@ describe("nibo.sh page", () => {
     cy.get('[data-cy="link-scrapbox"]').should(
       "have.attr",
       "href",
-      "https://scrapbox.io/niboshi/niboshi"
+      urls.scrapbox
     );
   });
 
@@ -15,19 +17,15 @@ describe("nibo.sh page", () => {
     cy.get('[data-cy="link-twitter"]').should(
       "have.attr",
       "href",
-      "https://twitter.com/mpppk"
+      urls.twitter
     );
   });
 
   it("displays GitHub link", () => {
-    cy.get('[data-cy="link-github"]').should(
-      "have.attr",
-      "href",
-      "https://github.com/mpppk"
-    );
+    cy.get('[data-cy="link-github"]').should("have.attr", "href", urls.github);
   });
 
-  it("displays Pay link", () => {
-    cy.get('[data-cy="link-pay"]').click().get("h1").should("have.text", "Pay");
+  it("displays _pay link", () => {
+    cy.get('[data-cy="link-pay"]').should("have.attr", "href", urls.pay);
   });
 });
