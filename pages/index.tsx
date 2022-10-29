@@ -45,6 +45,7 @@ const Home: NextPage = () => {
             target="_blank"
             rel="noreferrer"
             className={styles.card}
+            data-cy={'link-scrapbox'}
           >
             <h2>Profile</h2>
             <p>/niboshi on Scrapbox</p>
@@ -55,6 +56,7 @@ const Home: NextPage = () => {
             target="_blank"
             rel="noreferrer"
             className={styles.card}
+            data-cy={'link-twitter'}
           >
             <h2>Twitter</h2>
             <p>@mpppk</p>
@@ -65,13 +67,14 @@ const Home: NextPage = () => {
             className={styles.card}
             target="_blank"
             rel="noreferrer"
+            data-cy={'link-github'}
           >
             <h2>GitHub</h2>
             <p>@mpppk</p>
           </a>
 
           <Link href={"/pay"}>
-            <a className={styles.card}>
+            <a className={styles.card} data-cy={'link-pay'}>
               <h2>Pay</h2>
               <p>Kyash, PayPay</p>
             </a>
