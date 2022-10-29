@@ -1,35 +1,12 @@
 name: Main
-
 on: [push]
-
-permissions:
-  contents: 'read'
-  id-token: 'write'
-
-env:
-  GCP_REGION: asia-northeast1
-  DOCKER_REPO: docker-registry
-  DOCKER_IMAGE: search-api
-  DOCKER_TAG: ${{ github.sha }}
-  CLUSTER_NAME: staging-hf-cloud-search-cluster
-  PROVIDER: projects/866655636005/locations/global/workloadIdentityPools/id-pool/providers/gh-provider
-  SERVICE_ACCOUNT: cicd-sa@hf-cloud-search.iam.gserviceaccount.com
-  GCS_BUCKET: staging-hf-cloud-search-dataset
-  CLOUD_RUN_NAME: staging-index-server
 
 jobs:
   test-node:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Use Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '14.x'
-          registry-url: 'https://npm.pkg.github.com/'
-          scope: '@nota'
-      - run: npm ci
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GH_PAT_FOR_PACKAGES }}
+      - uses: actions/setup-node@v3
+      - run: yarn
       - run: yarn check
       - run: yarn build
