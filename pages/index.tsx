@@ -73,11 +73,9 @@ const Home: NextPage = () => {
             <p>@mpppk</p>
           </a>
 
-          <Link href={"/pay"}>
-            <a className={styles.card} data-cy={"link-pay"}>
-              <h2>Pay</h2>
-              <p>Kyash, PayPay</p>
-            </a>
+          <Link href={"/pay"} className={styles.card} data-cy={"link-pay"}>
+            <h2>Pay</h2>
+            <p>Kyash, PayPay</p>
           </Link>
         </div>
       </main>
