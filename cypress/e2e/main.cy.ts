@@ -1,4 +1,4 @@
-import {urls} from "../../src/const";
+import { urls } from "../../src/const";
 
 describe("nibo.sh page", () => {
   beforeEach(() => {
@@ -22,18 +22,10 @@ describe("nibo.sh page", () => {
   });
 
   it("displays GitHub link", () => {
-    cy.get('[data-cy="link-github"]').should(
-      "have.attr",
-      "href",
-      urls.github
-    );
+    cy.get('[data-cy="link-github"]').should("have.attr", "href", urls.github);
   });
 
   it("displays _pay link", () => {
-    cy.get('[data-cy="link-pay"]').should(
-        "have.attr",
-        "href",
-        urls.pay
-    );
+    cy.get('[data-cy="link-pay"]').should("have.attr", "href", urls.pay);
   });
 });
