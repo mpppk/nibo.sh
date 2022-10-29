@@ -27,7 +27,10 @@ describe("nibo.sh page", () => {
     );
   });
 
-  it("displays Pay link", () => {
-    cy.get('[data-cy="link-pay"]').click().get("h1").should("have.text", "Pay");
+  it("displays _pay link", () => {
+    cy.get('[data-cy="link-pay"]')
+      .click()
+      .get("h1")
+      .should("have.text", "_pay");
   });
 });
