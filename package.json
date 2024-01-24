@@ -18,7 +18,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@types/node": "18.19.8",
+    "@types/node": "18.19.9",
     "@types/react": "18.2.48",
     "cypress": "12.17.4",
     "eslint": "8.56.0",
