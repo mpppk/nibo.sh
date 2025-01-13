@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@types/node": "18.19.70",
-    "@types/react": "18.3.12",
+    "@types/react": "18.3.18",
     "cypress": "12.17.4",
     "eslint": "8.57.1",
     "eslint-config-next": "13.5.7",
